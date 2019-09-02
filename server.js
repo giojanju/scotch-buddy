@@ -2,8 +2,6 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-console.log(process.env.TEST)
-
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
